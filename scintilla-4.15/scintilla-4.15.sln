@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{B4FDC564-2709-4EF5-9B96-F5E98529C48D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{3C1FC848-66FA-449C-87BB-6DFF398EDFCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{148F4EE3-C2E9-442F-AD48-E6C848BE992A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{CF6CE8EA-A4BE-4483-817C-0B1FF327B25D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTester", "demo\test\unit\UnitTester.vcxproj", "{35688A27-D91B-453A-8A05-65A7F28DEFBF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FBE04237-9C7B-4973-9C60-505975998B39} = {FBE04237-9C7B-4973-9C60-505975998B39}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libscintilla", "thirdparty\scintilla-4.15\libscintilla.vcxproj", "{FBE04237-9C7B-4973-9C60-505975998B39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35688A27-D91B-453A-8A05-65A7F28DEFBF}.Debug|x64.ActiveCfg = Debug|x64
+		{35688A27-D91B-453A-8A05-65A7F28DEFBF}.Debug|x64.Build.0 = Debug|x64
+		{35688A27-D91B-453A-8A05-65A7F28DEFBF}.Release|x64.ActiveCfg = Release|x64
+		{35688A27-D91B-453A-8A05-65A7F28DEFBF}.Release|x64.Build.0 = Release|x64
+		{FBE04237-9C7B-4973-9C60-505975998B39}.Debug|x64.ActiveCfg = Debug|x64
+		{FBE04237-9C7B-4973-9C60-505975998B39}.Debug|x64.Build.0 = Debug|x64
+		{FBE04237-9C7B-4973-9C60-505975998B39}.Release|x64.ActiveCfg = Release|x64
+		{FBE04237-9C7B-4973-9C60-505975998B39}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{148F4EE3-C2E9-442F-AD48-E6C848BE992A} = {3C1FC848-66FA-449C-87BB-6DFF398EDFCB}
+		{CF6CE8EA-A4BE-4483-817C-0B1FF327B25D} = {148F4EE3-C2E9-442F-AD48-E6C848BE992A}
+		{35688A27-D91B-453A-8A05-65A7F28DEFBF} = {CF6CE8EA-A4BE-4483-817C-0B1FF327B25D}
+		{FBE04237-9C7B-4973-9C60-505975998B39} = {B4FDC564-2709-4EF5-9B96-F5E98529C48D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
